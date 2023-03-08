@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#gamecontainer{
+    height: 550px;
+    width: 420px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 0.5rem;
+    background-image: url(racingBg.jpg);
+    background-size: contain;
+    overflow: hidden;
+    
+}
+
+#bluecar{
+    height: 130px;
+    width: 140px;
+    /* background-color: blue; */
+    position: relative;
+    top: 0; 
+    left: 0;
+    animation: move 1s linear infinite;
+    background-image: url(blue.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#player{
+    height: 130px;
+    width: 140px;
+    /* background-color: red; */
+    position: relative;
+    top: 230px;
+    left: 140px;
+    background-image: url(race.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#gameover{
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: aqua;
+    width: 300px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+#gameover h2{
+    color: rgb(234, 78, 78);
+    margin-top: 1rem;
+    
+}
+
+#gameover p{
+    color: rgb(3, 19, 21);
+    margin-top: 1rem;
+    
+}
+
+#gameover #btn{
+    background-color: rgb(253, 255, 127);
+    color: black;
+    outline: none;
+    margin-top: 1rem;
+    border: none;
+    padding: 0.5rem;
+    border: 5px;
+    font-size: 1.2rem;
+
+    
+}
+
+@keyframes move {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 550px;
+    }
+}
+
